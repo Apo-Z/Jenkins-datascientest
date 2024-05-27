@@ -129,7 +129,7 @@ stage('Deploiement en staging'){
 }
     post { // send email when the job has failed
         // ..
-        always {
+        failed {
             echo "This will run if the job failed"
             mail to: "alimoviee@gmail.com",
                 subject: "${env.JOB_NAME} - Build # ${env.BUILD_ID} has failed",
