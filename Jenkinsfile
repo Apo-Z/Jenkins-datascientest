@@ -131,7 +131,7 @@ stage('Deploiement en staging'){
         // ..
         always {
             echo "This will run if the job failed"
-            mail to: "apoland.sync@gmail.com",
+            mail to: "alimoviee@gmail.com",
                 subject: "${env.JOB_NAME} - Build # ${env.BUILD_ID} has failed",
                 body: "For more info on the pipeline failure, check out the console output at ${env.BUILD_URL}"
         }
